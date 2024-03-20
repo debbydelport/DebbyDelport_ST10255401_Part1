@@ -1,0 +1,26 @@
+﻿@model TEST101.Models.Table_1
+@{
+    ViewData["Title"] = "About";
+}
+<html>
+<body>
+
+
+    <h1>About</h1>
+
+    <p>Type the first paragraphe here</p>
+
+    <img src="/Images101/Image1.webp" width="500" hight="500"/>
+
+    <form action ="About" method="post">
+        <p>Please enter you first and last name here;</p>
+        <input type ="text" name ="Name" placeholder="@Model.UserName" required />
+        <input type="text" name="Surname" placeholder="@Model.userSurname" required />
+        <input type="text" name="Email" placeholder="@Model.userEmail" required />
+        <button type="submit"></button>
+    </form>
+
+
+
+</body>
+</html>
